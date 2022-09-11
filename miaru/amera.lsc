@@ -2,16 +2,36 @@ Feature +long
 
 Diacritic ː [+long]
 
-Class v {a, e, i, o, u}
-Class c {p, t, k, s, m, n, ŋ, f, h, r, l, w, ʔ}
+Class vowel {a, e, i, o, u}
+Class cons {p, t, k, s, m, n, ŋ, f, h, r, l, w, ʔ}
 
 vowel-changes:
-    o => a / $ @c? _
-    o => * / @v @c _ $
-    u => o / $ @c? _
+    o => a / $ @cons? _
+    o => * / @vowel @cons _ $
+    u => o / $ @cons? _
     i => ə / _ $
-    a => o / $ @c? @c? _
+    a => o / $ @cons? @cons? _
     e => i / _ $
 
-consonant-changes:
+cons-changes:
     w => m
+    ŋ => ɣ
+    h => *
+    Then: @vowel$1 $1 => [+long] *
+    p => b / $ _
+    f => * / @vowel _ @vowel
+    f => w / $ _
+    p => b / @vowel _ @vowel
+    t => d / @vowel _ @vowel
+    l => u / @vowel _ $
+    ti => ts / $ _ @vowel
+    Then: (
+        @v$1 o => $1 u
+        Then: iu => e
+        ui => ei
+        ia => a
+        ea => a
+        ie => eː
+        r @v r => r @v ʔ
+        @v$1 $1 => [+long] *
+    )
