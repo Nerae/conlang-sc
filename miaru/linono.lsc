@@ -9,7 +9,7 @@ Class cons {p, t, k, s, m, n, ŋ, f, h, r, l, w, ʔ}
 vowel-changes:
     ie => i / $ _
     ia => ie
-    iu => u&[+long]
+    iu => uː
     wu => u
     ielie => ēlie
     @vowel$1 $1 => [+long] * # deromanizer
