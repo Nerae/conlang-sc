@@ -11,7 +11,7 @@ vowel-changes:
     ia => ie
     iu => uː
     wu => u
-    ielie => ēlie
+    ielie => eːlie
     @vowel$1 $1 => [+long] * # deromanizer
     io => eo
 
