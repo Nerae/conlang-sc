@@ -1,0 +1,27 @@
+# From Proto-Miaru to Linono
+Feature +long
+
+Diacritic ː [+long]
+
+Class vowel {a, e, i, o, u}
+Class cons {p, t, k, s, m, n, ŋ, f, h, r, l, w, ʔ}
+
+vowel-changes:
+    ie => i / $ _
+    ia => ie
+    iu => u&[+long]
+    wu => u
+    ielie => ēlie
+    @vowel$1 $1 => [+long] * # deromanizer
+    io => eo
+
+cons-changes:
+    ʔ => *
+    k => ʔ
+    t => k
+    ŋ => n
+    h => *
+    s => h
+    r => l / $ _
+    f => h / $ @vowel _ @vowel
+    f => w / $ _
