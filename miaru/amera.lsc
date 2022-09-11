@@ -1,1 +1,17 @@
 Feature +long
+
+Diacritic ː [+long]
+
+Class v {a, e, i, o, u}
+Class c {p, t, k, s, m, n, ŋ, f, h, r, l, w, ʔ}
+
+vowel-changes:
+    o => a / $ @c? _
+    o => * / @v @c _ $
+    u => o / $ @c? _
+    i => ə / _ $
+    a => o / $ @c? @c? _
+    e => i / _ $
+
+consonant-changes:
+    w => m
