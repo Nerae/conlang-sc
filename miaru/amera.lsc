@@ -26,12 +26,12 @@ cons-changes:
     l => u / @vowel _ $
     ti => ts / $ _ @vowel
     Then: (
-        @v$1 o => $1 u
+        @vowel$1 o => $1 u
         Then: iu => e
         ui => ei
         ia => a
         ea => a
         ie => eː
-        r @v r => r @v ʔ
-        @v$1 $1 => [+long] *
+        r @vowel r => r @vowel ʔ
+        @vowel$1 $1 => [+long] *
     )
