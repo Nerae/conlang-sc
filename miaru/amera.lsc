@@ -18,7 +18,6 @@ cons-changes:
     w => m
     ŋ => ɣ
     h => *
-    Then: @vowel$1 $1 => [+long] *
     p => b / $ _
     f => * / @vowel _ @vowel
     f => w / $ _
