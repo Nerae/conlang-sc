@@ -1,0 +1,25 @@
+# From Proto-Miaru to Mauvo
+Feature +long
+
+Diacritic ː [+long]
+
+Class vowel {a, e, i, o, u}
+Class cons {p, t, k, s, m, n, ŋ, f, h, r, l, w, ʔ}
+
+vowel-changes:
+    ia => ea
+    iu => iː
+    io => eː
+    a => * / @vowel @cons _ $
+    uo => ua
+    i => e / _ $
+
+cons-changes:
+    r => * / @vowel _ @vowel
+    w => v
+    h => *
+    k => h
+    t => k
+    f => h / $ _
+    f => v / @vowel _ @vowel
+    p => v
