@@ -1,0 +1,37 @@
+# From Proto-Miaru to Miku
+Feature +long
+
+Diacritic ː [+long]
+
+Class vowel {a, e, i, o, u}
+Class cons {p, t, k, s, m, n, ŋ, f, h, r, l, w, ʔ}
+
+vowel-changes:
+    a => o / $ m _
+    a => e / $ @cons _
+    ia => i
+    iu => e
+    ue => ui
+    ui => oi
+    io => i
+
+cons-changes:
+    t => ʔ / $ _
+    ŋ => n
+    ʔ => *
+    h => *
+    w => v
+    f => v / $ _
+    s => *
+    ti => t / _ $
+    r => ʔ
+    f => * / @vowel _ @vowel
+    l => ʔ
+    Then: (
+        e => * / @vowel j _ $
+        {ni / _ $, ni / _ @vowel} => j
+        iːi => iː
+        ue => oi
+        uie => oi
+        i => j / @vowel _ // i _
+    )
