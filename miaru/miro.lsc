@@ -1,0 +1,37 @@
+Feature +long
+
+Diacritic ː [+long]
+
+Class vowel {a, e, i, o, u, ɨ}
+Class cons {p, t, k, s, m, n, ŋ, f, h, r, l, w, ʔ, c}
+
+vowel-changes:
+    i => * / _ $
+    a => ɨ / @cons _ $
+    {ia, io, iu} => i
+    {o, ue} => a / @cons _ $
+    {{uo} / _ $, eo, au, eu} => ao
+    ie => ɨ / _ $
+    {oi, oe, uj} => oa
+    iei => iː
+    ie => i / @cons _ @cons
+    ij => j / _ $
+    ui => i / @cons _ @cons
+    {uh, u} => o / _ $
+    Then: (
+        uha => ao
+        {uhj, ohe, uhe} => oa
+        ahe => aj
+        iːha => iː
+        ihe => i
+        {ah, aːa} => aː
+    )
+
+cons-changes:
+    f => h
+    w => v
+    p => f
+    h => * / h @vowel _ @vowel
+    ʔ => h
+    s => z / @vowel _ @vowel
+    ŋ => m
